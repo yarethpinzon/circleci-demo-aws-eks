@@ -148,8 +148,8 @@ workflows:
       - undeploy-application:
           cluster-name: eks-orb-demo-app-deployment
           aws-region: $AWS_DEFAULT_REGION
-          requires:
-            - test-application
+          # requires:
+          #   - test-application
       - aws-eks/delete-cluster:
           cluster-name: eks-orb-demo-app-deployment
           aws-region: $AWS_DEFAULT_REGION
