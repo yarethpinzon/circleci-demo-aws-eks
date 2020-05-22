@@ -8,7 +8,7 @@ import (
 
 func mainHandler() http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprintf(w, "Hello World! (Version info: %s, build date: %s)", os.Getenv("VERSION_INFO"), os.Getenv("BUILD_DATE"))
+		fmt.Fprintf(w, "FUNCIONA YSP IN THE HOUSE MATHER FUCKERS! (Version info: %s, build date: %s)", os.Getenv("VERSION_INFO"), os.Getenv("BUILD_DATE"))
 	})
 }
 
